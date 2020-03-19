@@ -26,6 +26,8 @@ GEM
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
     active_material (1.4.2)
     active_skin (0.0.13)
+    active_storage_validations (0.8.7)
+      rails (>= 5.2.0)
     activeadmin (2.6.1)
       arbre (~> 1.2, >= 1.2.1)
       formtastic (~> 3.1)
@@ -276,6 +278,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_skin
+  active_storage_validations
   activeadmin
   activeadmin_addons
   activeadmin_quill_editor

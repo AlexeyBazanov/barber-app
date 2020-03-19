@@ -127,6 +127,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionview (v5.2.4.1, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="active_material (v1.4.2, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="active_skin (v0.0.13, RVM: ruby-2.6.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_storage_validations (v0.8.7, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeadmin (v2.6.1, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeadmin_addons (v1.7.1, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeadmin_quill_editor (v0.2.0, RVM: ruby-2.6.3) [gem]" level="application" />
