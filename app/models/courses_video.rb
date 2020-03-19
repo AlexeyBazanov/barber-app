@@ -1,2 +1,0 @@
-class CoursesVideo < ApplicationRecord
-end

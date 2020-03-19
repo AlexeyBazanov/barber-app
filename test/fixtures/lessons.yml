@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  courses: MyString
-  videos: MyString
+  course: one
+  video: one
+  start_at: 2020-03-19
 
 two:
-  courses: MyString
-  videos: MyString
+  course: two
+  video: two
+  start_at: 2020-03-19

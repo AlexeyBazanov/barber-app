@@ -20,6 +20,11 @@ ActiveAdmin.register Course do
       f.input :start_at
       f.input :finish_at
       f.input :description, as: :quill_editor
+
+      f.has_many :lessons do |lesson_f|
+        lesson_f.input :video_id, as: :select, collection: Video.pluck(:name, :id)
+        lesson_f.input :start_at
+      end
     end
     f.actions
   end
