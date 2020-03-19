@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: MyString
+  course: one
+  user: one
+  activate: false
+  expiration_date: 2020-03-19
+
+two:
+  body: MyString
+  course: two
+  user: two
+  activate: false
+  expiration_date: 2020-03-19

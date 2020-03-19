@@ -1,0 +1,2 @@
+class CoursesVideo < ApplicationRecord
+end
