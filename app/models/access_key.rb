@@ -3,7 +3,7 @@ class AccessKey < ApplicationRecord
   before_create :generate_body
 
   belongs_to :course
-  belongs_to :user
+  belongs_to :user, optional: true
 
   validates :course, presence: true
   validates :expiration_date, presence: true

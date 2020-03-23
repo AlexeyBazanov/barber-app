@@ -13,11 +13,17 @@
 @import "active_admin/base";
 
 $skinActiveColor: #ee6574;
-$skinHeaderBck: #441a24;
-$panelHeaderBck: #442335;
+$skinHeaderBck: #661625;
+$panelHeaderBck: #442240;
 //$skinLogo: url("admin_logo.png") no-repeat 0 0;
 @import "active_skin";
 @import 'activeadmin/quill_editor_input';
+
+.panel {
+  h3 {
+    margin-top: 0;
+  }
+}
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
