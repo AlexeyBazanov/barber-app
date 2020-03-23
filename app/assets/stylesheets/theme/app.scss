@@ -11,8 +11,8 @@ This is the font import from the google api
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
 @font-face {
   font-family: 'Calafia-Regular';
-  src: url('/assets/fonts/Calafia-Regular.eot?#iefix') format('embedded-opentype'),  url('/assets/fonts/Calafia-Regular.otf')  format('opentype'),
-         url('/assets/fonts/Calafia-Regular.woff') format('woff'), url('/assets/fonts/Calafia-Regular.ttf')  format('truetype'), url('/assets/fonts/Calafia-Regular.svg#Calafia-Regular') format('svg');
+  src: font-url('Calafia-Regular.eot?#iefix') format('embedded-opentype'),  font-url('Calafia-Regular.otf')  format('opentype'),
+  font-url('Calafia-Regular.woff') format('woff'), url('Calafia-Regular.ttf')  format('truetype'), font-url('Calafia-Regular.svg#Calafia-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
