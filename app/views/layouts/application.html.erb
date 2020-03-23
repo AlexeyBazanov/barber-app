@@ -43,7 +43,9 @@
         <div class="container po-relative">
           <nav class="navbar navbar-expand-md h5-nav-bar">
             <a href="javascript:void(0)" class="navbar-brand"><img src="<%= image_path 'logo_2.png' %>" alt="wrapkit"/></a>
-            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><span class="ti-menu"></span></button>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="ti-menu"></span>
+            </button>
             <div class="collapse navbar-collapse text-uppercase" id="h5-info">
               <ul class="navbar-nav ml-auto ">
                 <li class="nav-item"><a class="nav-link font-weight-bold" href="#"><i class="fa fa-phone font-20 vm"></i> +7 916 861-61-60</a></li>
@@ -73,7 +75,7 @@
         <!-- ============================================================== -->
         <!-- Static Slider 10  -->
         <!-- ============================================================== -->
-        <div class="static-slider10" style="background-image:url(<%= image_path 'background.jpg' %>)">
+        <div class="static-slider10" style="background-image:url(<%= image_path 'background.jpg' %>)" id="request">
           <div class="container">
             <!-- Row  -->
             <div class="row">
@@ -85,7 +87,7 @@
                     <br><br>
                     13 видеоуроков + 8 пошаговых чек-листов с алгоритмами стрижек.
                   </h5>
-                  <a href="#" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold">Узнать больше</a>
+                  <a href="#about" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold scroll-to">Узнать больше</a>
                 </div>
               </div>
               <div class="col-lg-5 col-md-5 text-center ml-auto">
@@ -129,7 +131,7 @@
         <!-- ============================================================== -->
         <!-- Feature 2  -->
         <!-- ============================================================== -->
-        <div class="spacer feature2">
+        <div class="spacer feature2" id="about">
           <div class="container">
             <!-- Row  -->
             <div class="row justify-content-center">
@@ -287,7 +289,7 @@
               </div>
               <!-- Column -->
               <div class="col-md-12 text-center m-t-30">
-                <p>У тебя еще остались вопросы? Напиши мне и мы это обсудим! <a href="javascript:void(0)" class="linking font-bold">Подать заявку<i class="ti-arrow-right"></i></a></p>
+                <p>У тебя еще остались вопросы? Напиши мне и мы это обсудим! <a href="#request" class="linking font-bold scroll-to">Подать заявку<i class="ti-arrow-right"></i></a></p>
               </div>
             </div>
           </div>
@@ -314,7 +316,7 @@
                     <li><i class="fa fa-check text-inverse"></i> <span>Станешь уверенным в себе мастером </span></li>
                     <li style="border-bottom: none"><i class="fa fa-check text-inverse"></i> <span> И еще многое из того, чему не учат в других школах и парикмахерских курсах </span></li>
                   </ul>
-                  <a class="btn btn-danger-gradiant btn-md btn-arrow m-t-20 m-b-20" href="#"><span>Записаться на курс<i class="ti-arrow-right"></i></span></a>
+                  <a class="btn btn-danger-gradiant btn-md btn-arrow m-t-20 m-b-20 scroll-to" href="#request"><span>Записаться на курс<i class="ti-arrow-right"></i></span></a>
                 </div>
               </div>
               <div class="col-md-5 ml-auto">
@@ -339,7 +341,7 @@
         <!-- ============================================================== -->
         <!-- Testimonial 8 -->
         <!-- ============================================================== -->
-        <div class="testimonial8">
+        <div class="testimonial8 d-none d-md-block">
           <div class="owl-carousel owl-theme testi8 text-center">
             <!-- item -->
             <div class="item">
@@ -348,7 +350,7 @@
                   <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10">
                       <h2 class="text-white font-light">Выбери формат курса в зависимости от своих предпочтений и количества свободного времени.</h2>
-                      <a href="#" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold">Узнать какие есть форматы</a>
+                      <a href="#formats" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold scroll-to">Узнать какие есть форматы</a>
                     </div>
                   </div>
                 </div>
@@ -361,7 +363,7 @@
                   <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10">
                       <h2 class="text-white font-light">Занимайся по специально составленной программе, которая поможет усвоить материал максимально легко и продуктивно.</h2>
-                      <a href="#" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold">Ознакомится с программой</a>
+                      <a href="#programm" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold scroll-to">Ознакомится с программой</a>
                     </div>
                   </div>
                 </div>
@@ -375,7 +377,7 @@
                   <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10">
                       <h2 class="text-white font-light">В конце обучения будет разыгран приз для лучшего ученика! Успей записаться на курс сейчас и получи скидку 50%!</h2>
-                      <a href="#" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold">Записаться на курс</a>
+                      <a href="#request" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold scroll-to">Записаться на курс</a>
                     </div>
                   </div>
                 </div>
@@ -390,7 +392,7 @@
         <!-- ============================================================== -->
         <!-- services  -->
         <!-- ============================================================== -->
-        <div class="spacer feature24">
+        <div class="spacer feature24 d-none d-md-block" id="formats" style="padding-bottom: 0">
           <div class="container">
             <!-- Row -->
             <div class="row client-box">
@@ -444,7 +446,7 @@
         <!-- ============================================================== -->
         <!-- services   -->
         <!-- ============================================================== -->
-        <div class="spacer feature8" style="padding-top: 0">
+        <div class="spacer feature8">
 
           <div class="container">
             <!-- Row -->
@@ -472,10 +474,10 @@
                   Сейчас действует предложение с 50% скидкой - <b class="font-weight-bold">8000 ₽</b><br>
                   <b class="font-weight-bold">При оплате сегодня до 24.00 - 7500 ₽!</b>
                 </p>
-                <a class="btn btn-danger-gradiant btn-rounded btn-md btn-arrow" href=""><span>Записаться на курс <i class="ti-arrow-right"></i></span></a>
+                <a class="btn btn-danger-gradiant btn-rounded btn-md btn-arrow scroll-to" href="#request"><span>Записаться на курс <i class="ti-arrow-right"></i></span></a>
               </div>
               <!-- Column -->
-              <div class="col-lg-6">
+              <div class="col-lg-6 d-none d-md-block">
                 <div class="p-20">
                   <img src="<%= image_path 'features/girl-hairdresser-3.jpg' %>" alt="wrapkit" class="img-responsive img-shadow" data-aos="flip-right" data-aos-duration="1200" />
                 </div>
@@ -486,11 +488,11 @@
           </div>
         </div>
 
-        <div class="bg-light spacer feature8" style="padding-top: 0">
+        <div class="bg-light spacer feature8">
 
           <!-- services  -->
           <!-- ============================================================== -->
-          <div class="spacer feature24">
+          <div class="spacer feature24 d-none d-md-block" style="padding-top: 0">
             <div class="container">
               <!-- Row -->
               <div class="row client-box">
@@ -544,7 +546,6 @@
           <!-- ============================================================== -->
           <!-- services   -->
           <!-- ============================================================== -->
-
           <div class="container">
             <!-- Row -->
             <div class="row">
@@ -570,10 +571,10 @@
                   Доплата 7000 рублей <br>
                   (Полная цена мини-курса составит - 10000 руб)
                 </p>
-                <a class="btn btn-danger-gradiant btn-rounded btn-md btn-arrow" href=""><span>Записаться на курс <i class="ti-arrow-right"></i></span></a>
+                <a class="btn btn-danger-gradiant btn-rounded btn-md btn-arrow scroll-to" href="#request"><span>Записаться на курс <i class="ti-arrow-right"></i></span></a>
               </div>
               <!-- Column -->
-              <div class="col-lg-6">
+              <div class="col-lg-6 d-none d-md-block">
                 <div class="p-20">
                   <img src="<%= image_path 'features/woman-with-glasses-working-barber-shop.jpg' %>" alt="wrapkit" class="img-responsive img-shadow" data-aos="flip-right" data-aos-duration="1200" />
                 </div>
@@ -584,7 +585,7 @@
           </div>
         </div>
 
-        <div class="container spacer" style="padding-bottom: 20px">
+        <div id="programm" class="container spacer" style="padding-bottom: 20px">
           <div class="row">
             <div class="col-md-12">
               <div class="card">
@@ -592,7 +593,7 @@
                   <h1 class="card-title" style="font-size: 24px">Программа обучения</h1>
                   <h2 class="card-subtitle" style="font-size: 20px">Что вас ждет на интенсив-курсе <span class="font-pink">"Правильные стрижки"</span></h2>
                   <!-- Nav tabs -->
-                  <div class="vtabs customvtab">
+                  <div class="vtabs customvtab d-none d-md-block">
                     <ul class="nav nav-tabs tabs-vertical" role="tablist">
                       <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#day1" role="tab">1 ЭТАП</a> </li>
                       <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day2" role="tab">2 ЭТАП</a> </li>
@@ -603,6 +604,7 @@
                       <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day7" role="tab">7 ЭТАП</a> </li>
                       <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day8" role="tab">8 ЭТАП</a> </li>
                     </ul>
+
                     <!-- Tab panes -->
                     <div class="tab-content">
                       <div class="tab-pane active" id="day1" role="tabpanel">
@@ -858,7 +860,279 @@
                     </div>
 
                   </div>
+
+                  <div class="d-sm-none">
+                    <ul class="nav nav-pills" role="tablist">
+                      <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#day1-m" role="tab">1 ЭТАП</a> </li>
+                      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day2-m" role="tab">2 ЭТАП</a> </li>
+                      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day3-m" role="tab">3 ЭТАП</a> </li>
+                      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day4-m" role="tab">4 ЭТАП</a> </li>
+                      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day5-m" role="tab">5 ЭТАП</a> </li>
+                      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day6-m" role="tab">6 ЭТАП</a> </li>
+                      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day7-m" role="tab">7 ЭТАП</a> </li>
+                      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#day8-m" role="tab">8 ЭТАП</a> </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="day1-m" role="tabpanel">
+                        <div class="p-t-20">
+                          <h3>План занятий для 1 этапа</h3>
+                          <br>
+
+                          <p><b class="font-pink">Видеолекция в прямом эфире.</b></p>
+                          <p>
+                            Что будет в прямом эфире: рассказываю, показываю, объясняю, отвечаю на вопросы.
+                            Рассказываю про домашнее задание: что нужно будет сделать, когда и как отчитаться.
+                          </p>
+
+                          <p><b>Видеоурок № 1</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Инструмент начинающего мастера</li>
+                            <li><i class="ti-angle-right"></i> Что понадобится на начальном этапе, чтобы не купить много не нужного</li>
+                            <li><i class="ti-angle-right"></i> Как общаться с клиентом новичку</li>
+                            <li><i class="ti-angle-right"></i> Что говорить</li>
+                            <li><i class="ti-angle-right"></i> Как выстраивать диалог</li>
+                            <li><i class="ti-angle-right"></i> Как подобрать стрижку</li>
+                            <li><i class="ti-angle-right"></i> Что посоветовать</li>
+                            <li><i class="ti-angle-right"></i> Как решать конфликтные ситуации с клиентом и др.</li>
+                          </ul>
+                          <br>
+
+                          <p><b>Видеоурок № 2</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Проборы. Деление головы на зоны</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по зонам головы</li>
+                          </ul>
+                          <br>
+
+                          <p><b>Видеоурок № 3</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка подравнивание по прямой</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+
+                          <p><b>Видеоурок № 4</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Укладка длинных волос на брашинг</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по укладке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+
+                          <p><b>Практика</b> - срок выполнения 1 неделя.</p>
+                          <p><b>Домашнее задание</b>, видео/фото отчеты.</p>
+
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="day2-m" role="tabpanel">
+                        <div class="p-t-20">
+                          <h3>План занятий для 2 этапа</h3>
+                          <br>
+
+                          <p><b class="font-pink">Видеолекция в прямом эфире.</b></p>
+                          <p>
+                            Что будет в прямом эфире: рассказываю, показываю, объясняю, отвечаю на вопросы.
+                            Рассказываю про домашнее задание: что нужно будет сделать, когда и как отчитаться.
+                          </p>
+
+                          <p><b>Видеоурок № 5</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка подравнивание овальная форма</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+                          <p><b>Практика</b> - срок выполнения 1 неделя.</p>
+                          <p><b>Домашнее задание</b>, видео/фото отчеты.</p>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="day3-m" role="tabpanel">
+                        <div class="p-t-20">
+                          <h3>План занятий для 3 этапа</h3>
+                          <br>
+
+                          <p><b class="font-pink">Видеолекция в прямом эфире.</b></p>
+                          <p>
+                            Что будет в прямом эфире: рассказываю, показываю, объясняю, отвечаю на вопросы.
+                            Рассказываю про домашнее задание: что нужно будет сделать, когда и как отчитаться.
+                          </p>
+
+                          <p><b>Видеоурок № 6</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка Каре классическое</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+                          <p><b>Практика</b> - срок выполнения 1 неделя.</p>
+                          <p><b>Домашнее задание</b>, видео/фото отчеты.</p>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="day4-m" role="tabpanel">
+                        <div class="p-t-20">
+                          <h3>План занятий для 4 этапа</h3>
+                          <br>
+
+                          <p><b class="font-pink">Видеолекция в прямом эфире.</b></p>
+                          <p>
+                            Что будет в прямом эфире: рассказываю, показываю, объясняю, отвечаю на вопросы.
+                            Рассказываю про домашнее задание: что нужно будет сделать, когда и как отчитаться.
+                          </p>
+
+                          <p><b>Видеоурок № 7</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка Каре на удлинение</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+                          <p><b>Практика</b> - срок выполнения 1 неделя.</p>
+                          <p><b>Домашнее задание</b>, видео/фото отчеты.</p>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="day5-m" role="tabpanel">
+                        <div class="p-t-20">
+                          <h3>План занятий для 5 этапа</h3>
+                          <br>
+
+                          <p><b class="font-pink">Видеолекция в прямом эфире.</b></p>
+                          <p>
+                            Что будет в прямом эфире: рассказываю, показываю, объясняю, отвечаю на вопросы.
+                            Рассказываю про домашнее задание: что нужно будет сделать, когда и как отчитаться.
+                          </p>
+
+                          <p><b>Видеоурок № 8</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка Боб-каре</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+                          <p><b>Практика</b> - срок выполнения 1 неделя.</p>
+                          <p><b>Домашнее задание</b>, видео/фото отчеты.</p>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="day6-m" role="tabpanel">
+                        <div class="p-t-20">
+                          <h3>План занятий для 6 этапа</h3>
+                          <br>
+
+                          <p><b class="font-pink">Видеолекция в прямом эфире.</b></p>
+                          <p>
+                            Что будет в прямом эфире: рассказываю, показываю, объясняю, отвечаю на вопросы.
+                            Рассказываю про домашнее задание: что нужно будет сделать, когда и как отчитаться.
+                          </p>
+
+                          <p><b>Видеоурок № 9</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка Каре на ножке</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+                          <p><b>Практика</b> - срок выполнения 1 неделя.</p>
+                          <p><b>Домашнее задание</b>, видео/фото отчеты.</p>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="day7-m" role="tabpanel">
+                        <div class="p-t-20">
+                          <h3>План занятий для 7 этапа</h3>
+                          <br>
+
+                          <p><b class="font-pink">Видеолекция в прямом эфире.</b></p>
+                          <p>
+                            Что будет в прямом эфире: рассказываю, показываю, объясняю, отвечаю на вопросы.
+                            Рассказываю про домашнее задание: что нужно будет сделать, когда и как отчитаться.
+                          </p>
+
+                          <p><b>Видеоурок № 10</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка равномерная</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+
+                          <p><b>Видеоурок № 11</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка челки</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+                          <p><b>Практика</b> - срок выполнения 1 неделя.</p>
+                          <p><b>Домашнее задание</b>, видео/фото отчеты.</p>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="day8-m" role="tabpanel">
+                        <div class="p-t-20">
+                          <h3>План занятий для 8 этапа</h3>
+                          <br>
+
+                          <p><b class="font-pink">Видеолекция в прямом эфире.</b></p>
+                          <p>
+                            Что будет в прямом эфире: рассказываю, показываю, объясняю, отвечаю на вопросы.
+                            Рассказываю про домашнее задание: что нужно будет сделать, когда и как отчитаться.
+                          </p>
+
+                          <p><b>Видеоурок № 12</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Стрижка мужская классическая (с применением машинки с насадкой)</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по стрижке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+
+                          <p><b>Видеоурок № 13</b></p>
+
+                          <p>Теория:</p>
+
+                          <ul class="list-icons">
+                            <li><i class="ti-angle-right"></i> Укладка волос - поднятие корней</li>
+                            <li><i class="ti-angle-right"></i> Чек-лист по укладке с четким алгоритмом действий</li>
+                          </ul>
+                          <br>
+                          <p><b>Практика</b> - срок выполнения 1 неделя.</p>
+                          <p><b>Домашнее задание</b>, видео/фото отчеты.</p>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
+                  </div>
+
+                  </div>
+                  <!-- Nav tabs mobile -->
+
                 </div>
               </div>
             </div>
@@ -877,7 +1151,7 @@
                 <h6 class="subtitle">Спешите записаться на курс пока действительна 50% скидка!</h6>
               </div>
               <div class="col-lg-3 col-md-5 align-self-center">
-                <a class="btn btn-danger-gradiant btn-md btn-arrow m-b-20 pull-right" data-toggle="collapse" href="#f1"><span>Записаться на курс <i class="ti-arrow-right"></i></span></a>
+                <a class="btn btn-danger-gradiant btn-md btn-arrow m-b-20 pull-right scroll-to" href="#request"><span>Записаться на курс <i class="ti-arrow-right"></i></span></a>
               </div>
             </div>
           </div>

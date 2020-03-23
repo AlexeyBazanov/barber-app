@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("body").trigger("resize");
     $('.testi8').owlCarousel({
         loop: true,
         margin: 20,
@@ -20,5 +21,12 @@ $(document).ready(function () {
         delay: 10,
         triggerOnce:true
     });
+    $(".scroll-to").click(function (e) {
+        e.preventDefault();
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        $("body,html").animate({scrollTop: destination }, 800);
+    });
+    AOS.init();
 });
 

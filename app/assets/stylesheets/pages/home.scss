@@ -4,3 +4,37 @@
 .font-pink {
   color: #e83e8c;
 }
+
+@media (max-width: 575px) {
+  .btn-danger-gradiant.pull-right {
+    float: none !important;
+  }
+
+  .spacer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .spacer.feature8 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  //
+  .wrap-feature47-box {
+    .ml-auto {
+      padding-top: 20px;
+    }
+  }
+
+  .spacer.c2a4 {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  //
+  //.spacer.feature47 {
+  //  padding-bottom: 30px;
+  //}
+
+}
+
+
