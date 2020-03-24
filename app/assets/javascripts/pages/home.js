@@ -17,6 +17,23 @@ $(document).ready(function () {
             }
         }
     });
+    $('.testi9').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+
+            },
+            1650: {
+                items: 1
+            }
+        }
+    })
     $('.counter').counterUp({
         delay: 10,
         triggerOnce:true
@@ -28,5 +45,11 @@ $(document).ready(function () {
         $("body,html").animate({scrollTop: destination }, 800);
     });
     AOS.init();
+    $('.video-img').on('click', function() {
+        $(this).addClass('hide');
+        $('.embed-responsive').show()
+            .removeClass('hide');
+        $("video").each(function() { this.play() });
+    });
 });
 

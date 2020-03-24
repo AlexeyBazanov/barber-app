@@ -5,6 +5,28 @@
   color: #e83e8c;
 }
 
+.person-info {
+  padding-right: 60px;
+}
+
+.text-theme-gradient {
+  background: #FF4D7E;
+  background: -webkit-linear-gradient(legacy-direction(to right), #FF4D7E 0%, #D73E6B 100%);
+  background: linear-gradient(to right, #FF4D7E 0%, #D73E6B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.owl-carousel .owl-item img {
+  width: 50px;
+}
+
+.testimonial9 {
+  border-top: 10px solid #f5f7fa;
+}
+
 @media (max-width: 575px) {
   .btn-danger-gradiant.pull-right {
     float: none !important;

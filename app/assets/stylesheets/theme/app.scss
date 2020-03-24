@@ -524,6 +524,15 @@ Text Colors
     text-fill-color:transparent;
 }
 
+.text-danger-gradiant {
+  @include linear-gradient (to right, $danger 0%, $danger-dark 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color:transparent;
+}
+
+
 html body {
     .text-blue {
         color: $blue;

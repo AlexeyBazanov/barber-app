@@ -126,3 +126,48 @@ Testimonial 8
     }    
 }
 
+/*******************
+Testimonial 9
+*******************/
+.testimonial9 .card {
+  position: relative; }
+.testimonial9 .card .p-40::after {
+  position: absolute;
+  bottom: -15px;
+  left: 20;
+  content: '';
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ffffff; }
+
+.testimonial9 .owl-theme .owl-dots .owl-dot.active span, .testimonial9 .owl-theme .owl-dots .owl-dot:hover span {
+  background: #188ef4; }
+
+.testimonial9 .owl-dots {
+  position: absolute;
+  left: -98%;
+  top: 70%; }
+
+.testimonial9 .devider {
+  height: 2px;
+  width: 40px;
+  display: inline-block;
+  margin: 22px 0; }
+
+.testimonial9 h5.text {
+  line-height: 30px;
+  font-weight: 300; }
+
+.testimonial9 .customer-thumb img {
+  width: 60px;
+  margin-right: 20px; }
+
+.testimonial9 .d-flex {
+  margin-left: 25px; }
+
+@media (max-width: 767px) {
+  .testimonial9 .owl-dots {
+    position: relative;
+    top: 0px;
+    left: 0px; } }
+
