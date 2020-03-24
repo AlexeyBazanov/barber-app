@@ -35,7 +35,7 @@ $(document).ready(function () {
         }
     })
     $('.counter').counterUp({
-        delay: 10,
+        delay: 5,
         triggerOnce:true
     });
     $(".scroll-to").click(function (e) {
