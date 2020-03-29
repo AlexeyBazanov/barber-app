@@ -1,4 +1,7 @@
 ActiveAdmin.register Video do
+
+  menu label: 'Видео'
+
   permit_params :name, :description, :link, :image
 
   filter :name

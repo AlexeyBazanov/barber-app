@@ -1,5 +1,7 @@
 ActiveAdmin.register Course do
 
+  menu label: 'Курсы'
+
   permit_params :name, :description, :start_at, :finish_at, :image,
                 lessons_attributes: [ :id, :video_id, :start_at, :_destroy ]
   filter :name

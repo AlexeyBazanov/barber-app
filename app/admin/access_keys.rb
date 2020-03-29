@@ -1,5 +1,7 @@
 ActiveAdmin.register AccessKey do
 
+  menu label: 'Ключи доступа'
+
   permit_params :course_id, :expiration_date
 
   filter :body

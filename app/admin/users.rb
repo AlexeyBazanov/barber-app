@@ -1,4 +1,7 @@
 ActiveAdmin.register User do
+
+  menu label: 'Пользователи'
+
   permit_params :fname, :lname, :email, :password, :password_confirmation
 
   filter :email

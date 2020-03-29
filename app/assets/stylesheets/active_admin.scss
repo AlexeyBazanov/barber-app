@@ -15,7 +15,7 @@
 $skinActiveColor: #ee6574;
 $skinHeaderBck: #661625;
 $panelHeaderBck: #442240;
-//$skinLogo: url("admin_logo.png") no-repeat 0 0;
+$skinLogo: url("logo_2.png") no-repeat 0 0;
 @import "active_skin";
 @import 'activeadmin/quill_editor_input';
 
@@ -24,6 +24,12 @@ $panelHeaderBck: #442240;
     margin-top: 0;
   }
 }
+
+#header h1.site_title {
+  background-size: contain;
+  background-position-x: center;
+}
+
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
