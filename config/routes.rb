@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'home/index'
 
+  post 'order', to: 'orders#create'
 
 end

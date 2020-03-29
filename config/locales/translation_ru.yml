@@ -1,0 +1,24 @@
+ru:
+  activerecord:
+    models:
+      active_admin/comment: Комментарий  #g
+      admin_user: Администратор  #g
+      order: Заявка  #g
+      user: Пользователь  #g
+
+    attributes:
+      active_admin/comment:
+        author: :activerecord.models.author  #g
+        author_type: Тип автора  #g
+        body: Тело  #g
+        namespace: Пространство имен  #g
+        resource: :activerecord.models.resource  #g
+        resource_type: Тип ресурса  #g
+
+      admin_user:
+        email: Эл. адрес  #g
+        encrypted_password: Зашифрованный пароль  #g
+        remember_created_at: Помните, созданный в  #g
+        reset_password_sent_at: Сброс пароля отправлен на  #g
+        reset_password_token: Сброс пароля токена  #g
+

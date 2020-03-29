@@ -1,0 +1,18 @@
+ru:
+  active_admin:
+    filters:
+      predicates:
+        from: Начальная дата
+        to: Конечная дата
+
+    new_model: "Создать объект «%{model}»"
+    edit_model: "Изменить объект «%{model}»"
+    delete_model: "Удалить объект «%{model}»"
+    pagination:
+      empty: "Объектов «%{model}» не найдено"
+      one: "Результат: <b>1</b> объект «%{model}»"
+      one_page: "Результат: <b>%{n}</b> объектов «%{model}»"
+      multiple: "Результат: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> из <b>%{total}</b>"
+      multiple_without_total: "Результат: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+    blank_slate:
+        content: "Пока нет объектов «%{resource_name}»."

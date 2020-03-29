@@ -69,3 +69,4 @@ gem 'activeadmin_quill_editor'
 gem 'active_storage_validations'
 gem 'image_processing', '~> 1.2'
 gem 'aws-sdk-s3', require: false
+gem 'bootstrap_form', '~> 4.0'
