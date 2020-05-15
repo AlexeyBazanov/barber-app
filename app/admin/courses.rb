@@ -3,7 +3,7 @@ ActiveAdmin.register Course do
   menu label: 'Курсы'
 
   permit_params :name, :description, :start_at, :finish_at, :image,
-                lessons_attributes: [ :id, :video_id, :start_at, :_destroy ]
+                lessons_attributes: [ :id, :video_id, :name, :home_work, :start_at, :_destroy ]
   filter :name
   filter :start_at
   filter :finish_at
@@ -35,7 +35,9 @@ ActiveAdmin.register Course do
       panel 'Уроки' do
         table_for course.lessons do
           column :video
+          column :name
           column :start_at
+          column :home_work
         end
       end
     end
@@ -52,7 +54,9 @@ ActiveAdmin.register Course do
 
       f.has_many :lessons do |lesson_f|
         lesson_f.input :video_id, as: :select, collection: Video.pluck(:name, :id)
+        lesson_f.input :name
         lesson_f.input :start_at
+        lesson_f.input :home_work
       end
     end
     f.actions

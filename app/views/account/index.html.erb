@@ -1,0 +1,100 @@
+<div class="spacer c2a4 p-b-40 bg-danger-gradiant"></div>
+
+
+
+<div class="spacer c2a4 p-b-30 p-t-30 bg-light">
+  <div class="container">
+
+    <nav class="breadcrumb m-t-10 m-b-30">
+      <a class="breadcrumb-item" href="/">Главная</a>
+      <span class="breadcrumb-item active">Личный кабинет</span>
+    </nav>
+
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <h2 class="font-medium">Здравствуйте, <%= current_user.fname %>.</h2>
+
+        <% if current_user.sign_in_count > 1 %>
+            <h6 class="subtitle">Рады снова видеть вас на курсе «Правильные стрижки»!</h6>
+        <% else %>
+            <h6 class="subtitle">Добро пожалоать на курс «Правильные стрижки»!</h6>
+        <% end %>
+
+      </div>
+
+      <div class="col-lg-4 col-sm-12">
+        <a class="btn btn-danger btn-sm" href="#"><i class="fa fa-pencil"></i> Редактировать свои данные</a>
+        <%= link_to '<i class="fa fa-sign-out"></i> Выйти'.html_safe,
+                    destroy_user_session_path, method: :delete, class: 'btn btn-danger btn-sm' %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer c2a4 p-b-20 p-t-20 b-t">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="font-medium">Ваши курсы</h2>
+        <% if current_user.access_keys.present? %>
+          <% current_user.access_keys.each do |access_key| %>
+            <h4><%= access_key.course.name %></h4>
+            <div class="m-t-10 m-b-20"><%= image_tag(access_key.course.image.variant(resize: '200x200^')) %></div>
+            <div><%= access_key.course.description.html_safe %></div>
+
+            <a href="<%= courses_path(access_key.course) %>" class="btn btn-danger m-b-20">
+              <i class="fa fa-book"></i> Перейти к курсу
+            </a>
+          <% end %>
+        <% else %>
+          <h6 class="subtitle">Вы еще не зарегистрировались ни на одном курсе &#128542; <br>
+            Вы можете сделать это, воспользовавшись формой ниже &#8595;
+          </h6>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer c2a4 p-b-20 p-t-10 bg-light b-t">
+
+  <%= bootstrap_form_with model: @course_access_form, url: access_course_path, local: true, label_errors: false, inline_errors: true,
+                          class: 'p-30', data: { aos: 'fade-left', 'aos-duration': '1200' } do |f| %>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-medium">Активация нового курса</h2>
+            <h6 class="subtitle m-b-20">Введите ключ доступа для того, чтобы активировать новый курс.</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <%= f.text_field :access_key_body, hide_label: true, placeholder: 'Ключ доступа' %>
+          </div>
+
+          <div class="col-lg-8 d-flex m-t-10">
+            <button type="submit" class="btn btn-md btn-block btn-danger-gradiant btn-arrow" data-disable-with="Отправка...">
+              <span> Активировать курс <i class="ti-arrow-right"></i></span>
+            </button>
+          </div>
+
+          <div class="col-lg-8 m-t-30">
+            <h6 class="text-muted">
+              <i class="fa fa-info-circle"></i>
+              Если у вас нет ключа доступа, вы можете подать заявку
+              на курс заполнив форму <a class="link text-underline" href="/#request" target="_blank">здесь</a>
+              или обратиться ко мне напрямую <a class="link text-underline" href="https://vk.com/margarita76yreo" target="_blank">в контакте</a>,
+              через <a class="link text-underline" href="https://wa.me/79168616160" target="_blank">whatsapp</a>,
+              позвонив по номеру <span class="text-danger">+7(916)861-61-60</span>,
+              или написав письмо на электронный адрес <span class="text-danger">info@kurs-parikmaher.ru</span>.
+              Также вы можете связаться со мной, если у вас возникли проблемы при активации курса.
+            </h6>
+          </div>
+        </div>
+      </div>
+  <% end %>
+
+</div>

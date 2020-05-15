@@ -1,26 +1,32 @@
-<h2>Log in</h2>
+<%= render layout: 'devise/shared/wrapper', locals: { title: 'Войти', sub_title: 'в личный кабинет' } do %>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <%= bootstrap_form_for resource, as: resource_name, url: session_path(resource_name),
+                           html: { class: 'm-t-10 p-30'}, data: { aos: 'fade-left', 'aos-duration': '1200' } do |f| %>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <%= f.email_field :email, autofocus: true, hide_label: true, placeholder: 'E-mail', autocomplete: "email" %>
+          </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
+          <div class="col-lg-12">
+            <%= f.password_field :password, hide_label: true, placeholder: 'Пароль', autocomplete: "current-password" %>
+          </div>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+          <% if devise_mapping.rememberable? %>
+              <div class="col-lg-12">
+                <%= f.check_box :remember_me, label: 'Запомнить меня', checked: 'checked' %>
+              </div>
+          <% end %>
+
+          <div class="actions col-lg-12 d-flex m-t-20">
+            <button type="submit" class="btn btn-md btn-block btn-danger-gradiant btn-arrow" data-disable-with="Отправка...">
+              <span> Войти <i class="ti-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+
+    <% end %>
+
 <% end %>
 
-<%= render "devise/shared/links" %>
+

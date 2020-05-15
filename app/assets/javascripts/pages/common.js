@@ -4,7 +4,8 @@
  Email: niravjoshi87@gmail.com
  File: js
  */
-$(function () {
+$(document).on('turbolinks:load', function () {
+
     "use strict";
     // ==============================================================
     //This is for preloader
@@ -16,30 +17,20 @@ $(function () {
     //Tooltip
     // ==============================================================
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+        $('[data-toggle="tooltip"]').tooltip();
+    });
     // ==============================================================
     //Popover
     // ==============================================================
     $(function () {
-        $('[data-toggle="popover"]').popover()
+        $('[data-toggle="popover"]').popover();
     });
-    // ==============================================================
-    // For mega menu
-    // ==============================================================
-    jQuery(document).on('click', '.mega-dropdown', function (e) {
-        e.stopPropagation()
-    });
-    jQuery(document).on('click', '.navbar-nav > .dropdown', function(e) {
-        e.stopPropagation();
-    });
-    $(".dropdown-submenu").click(function(){
-        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
-    });
+
     // ==============================================================
     // Resize all elements
     // ==============================================================
     $("body").trigger("resize");
+
     // ==============================================================
     //Fix header while scroll
     // ==============================================================
@@ -53,6 +44,7 @@ $(function () {
             navbar.removeClass("fixed-header animated slideInDown")
         }
     });
+
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 100) {
             $('.topbar').addClass('fixed-header animated slideInDown');
@@ -62,17 +54,35 @@ $(function () {
             $('.bt-top').removeClass('visible');
         }
     });
+
     // ==============================================================
     // Animation initialized
     // ==============================================================
     AOS.init();
-    // ==============================================================
-    // Back to top
-    // ==============================================================
-    $('.bt-top').on('click', function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 700);
-    });
+
 });
+
+
+$(document).on('click', '.mega-dropdown', function (e) {
+    e.stopPropagation()
+});
+$(document).on('click', '.navbar-nav > .dropdown', function(e) {
+    e.stopPropagation();
+});
+$(document).on('click', '.dropdown-submenu', function (e) {
+    $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
+});
+
+// ==============================================================
+// Back to top
+// ==============================================================
+$(document).on('click', '.bt-top', function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    }, 700);
+});
+
+
+
+

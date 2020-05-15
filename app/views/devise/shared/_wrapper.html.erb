@@ -1,0 +1,42 @@
+<div class="page-wrapper">
+
+  <div class="container-fluid">
+
+    <div class="static-slider10" style="background-image:url(<%= image_path 'background.jpg' %>)" id="request">
+      <div class="container">
+        <!-- Row  -->
+        <div class="row">
+          <div class="col-lg-6 align-self-center " data-aos="fade-down" data-aos-duration="1500">
+            <div class="">
+              <h1 class="text-white font-medium">ВИДЕОКУРС «ПРАВИЛЬНЫЕ СТРИЖКИ»</h1>
+              <h5 class="text-white m-t-20 hidden-md-down">
+                Курс для начинающих мастеров и практикующих парикмахеров, которые хотят довести свое мастерство до совершенства!
+                <br><br>
+                13 видеоуроков + 12 пошаговых чек-листов с алгоритмами стрижек.
+              </h5>
+              <a href="/" class="btn btn-outline-light btn-rounded m-t-30 m-b-30 font-weight-bold">Узнать больше</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 text-center ml-auto">
+            <div class="card" data-aos="flip-left" data-aos-duration="1200">
+              <div class="card-body">
+                <div class="text-box">
+                  <h1 class="title font-weight-bold mb-1"><span class="font-stylish"><%= title %></span></h1>
+                  <h2 class="title font-light mt-2 mb-1"><%= sub_title %></h2>
+                  <div class="order-form">
+                    <%= yield %>
+                    <%= render "devise/shared/links" %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+

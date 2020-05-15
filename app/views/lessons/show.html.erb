@@ -1,2 +1,42 @@
-<h1>Lessons#show</h1>
-<p>Find me in app/views/lessons/show.html.erb</p>
+<div class="spacer c2a4 p-b-40 bg-danger-gradiant"></div>
+
+<div class="spacer c2a4 p-b-30 p-t-30 b-b">
+  <div class="container">
+
+    <nav class="breadcrumb m-t-10 m-b-30">
+      <a class="breadcrumb-item" href="/">Главная</a>
+      <a class="breadcrumb-item" href="<%= account_path %>">Личный кабинет</a>
+      <a class="breadcrumb-item" href="<%= courses_path(@lesson.course) %>"><%= @lesson.course.name %></a>
+      <span class="breadcrumb-item active"><%= @lesson.name %></span>
+    </nav>
+
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <h2 class="font-medium"><%= @lesson.name %></h2>
+
+        <video
+          id="my-player"
+          class="video-js vjs-theme-fantasy"
+          controls
+          preload="auto"
+          poster="<%=  url_for(@lesson.video.image) %>"
+          data-setup='{}'>
+            <source src="<%= @lesson.video.link %>" type="video/mp4"></source>
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank">
+                supports HTML5 video
+              </a>
+            </p>
+        </video>
+
+        <% if @lesson.home_work.present? %>
+            <h3 class="m-t-30">Домашняя работа</h3>
+            <div><%= @lesson.home_work %></div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

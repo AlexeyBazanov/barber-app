@@ -1,2 +1,44 @@
-<h1>Courses#show</h1>
-<p>Find me in app/views/courses/show.html.erb</p>
+<div class="spacer c2a4 p-b-40 bg-danger-gradiant"></div>
+
+<div class="spacer c2a4 p-b-30 p-t-30 b-b">
+  <div class="container">
+
+    <nav class="breadcrumb m-t-10 m-b-30">
+      <a class="breadcrumb-item" href="/">Главная</a>
+      <a class="breadcrumb-item" href="<%= account_path %>">Личный кабинет</a>
+      <span class="breadcrumb-item active"><%= @course.name %></span>
+    </nav>
+
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <h2 class="font-medium"><%= @course.name %></h2>
+        <h6 class="text-info font-bold">Дата начала курса: <%= @course.start_at %></h6>
+        <h6 class="text-danger font-bold">Дата завершения курса: <%= @course.finish_at %></h6>
+        <h5 class="font-medium">Описание:</h5>
+        <%= @course.description.html_safe %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer c2a4 p-b-30 p-t-30 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <h2 class="font-medium m-b-20">Список занятий</h2>
+        <% @course.lessons.each do |lesson| %>
+          <h3><%= lesson.name %></h3>
+
+          <% if  Date.today >= lesson.start_at %>
+              <a href="<%= lessons_path(lesson) %>" class="btn btn-danger btn-sm m-b-20">
+                <i class="fa fa-book"></i> Перейти к занятию
+              </a>
+          <% else %>
+              <p>Будет доступен с <%= lesson.start_at %></p>
+          <% end %>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

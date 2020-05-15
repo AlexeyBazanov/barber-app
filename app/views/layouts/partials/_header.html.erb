@@ -19,6 +19,17 @@
             <li class="nav-item"><a class="nav-link" href="https://vk.com/margarita76yreo" target="_blank"><i class="fa fa-vk font-20 vm"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="https://wa.me/79168616160" target="_blank"><i class="fa fa-whatsapp font-20 vm"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCv-9ncojsCbN-6w-2QsfzvA" target="_blank"><i class="fa fa-youtube-play font-20 vm"></i></a></li>
+
+            <% if user_signed_in? %>
+                <li class="nav-item">
+                  <a class="nav-link" href="<%= account_path %>"><i class="fa fa-user font-20 vm"></i> <b>Личный кабинет</b></a>
+                </li>
+            <% else %>
+                <li class="nav-item"><a class="nav-link" href="<%= new_user_session_path %>">
+                  <i class="fa fa-sign-in font-20 vm"><b> Войти</b></i></a>
+                </li>
+            <% end %>
+
           </ul>
         </div>
       </nav>

@@ -1,0 +1,17 @@
+<script>
+
+    <% flash.each do |key, message| %>
+
+      $(document).ready(function () {
+          Swal.fire({
+              position: 'top-end',
+              icon: '<%= key == 'notice' ? 'success' : 'error' %>',
+              title: '<%= message %>',
+              showConfirmButton: false,
+              timer: 2500
+          })
+      });
+
+    <% end %>
+
+</script>
