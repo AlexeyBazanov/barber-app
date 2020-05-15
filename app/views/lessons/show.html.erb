@@ -16,7 +16,7 @@
 
         <video
           id="my-player"
-          class="video-js vjs-theme-fantasy"
+          class="video-js vjs-theme-city"
           controls
           preload="auto"
           poster="<%=  url_for(@lesson.video.image) %>"
@@ -30,6 +30,12 @@
               </a>
             </p>
         </video>
+
+        <script>
+            document.addEventListener("contextmenu", function(e){
+                e.preventDefault();
+            }, false);
+        </script>
 
         <% if @lesson.home_work.present? %>
             <h3 class="m-t-30">Домашняя работа</h3>

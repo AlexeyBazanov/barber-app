@@ -24,7 +24,6 @@ ActiveAdmin.register Course do
       row :name
       row :start_at
       row :finish_at
-      row :finish_at
       row :image do
         link_to image_tag(course.image.variant(resize: '100x100^')),
                 url_for(course.image), target: '_blank'
@@ -37,7 +36,6 @@ ActiveAdmin.register Course do
           column :video
           column :name
           column :start_at
-          column :home_work
         end
       end
     end
