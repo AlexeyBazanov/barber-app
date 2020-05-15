@@ -11,7 +11,7 @@ amazon:
   service: S3
   access_key_id: AKIAXTBLOGNERU5GTHDH
   secret_access_key: EHc0ojesbHgtVeK2/lLkEOT1fI/yBnq67brzHkKy
-  region: us-east-1
+  region: eu-central-1
   bucket: barber-app
 
 # Remember not to checkin your GCS keyfile to a repository
