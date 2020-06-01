@@ -29,7 +29,7 @@
         <% @course.lessons.each do |lesson| %>
           <h3><%= lesson.name %></h3>
 
-          <% if  Date.today >= lesson.start_at %>
+          <% if Date.today >= lesson.start_at %>
               <a href="<%= lessons_path(lesson) %>" class="btn btn-danger btn-sm m-b-20">
                 <i class="fa fa-book"></i> Перейти к занятию
               </a>

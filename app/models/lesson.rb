@@ -6,4 +6,5 @@ class Lesson < ApplicationRecord
   validates :video, presence: true
   validates :start_at, presence: true
   validates :name, presence: true
+
 end

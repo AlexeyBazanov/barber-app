@@ -6,6 +6,7 @@ ActiveAdmin.register Order do
 
   filter :name
   filter :email
+  filter :vk_link
   filter :phone
   filter :status, as: :select, collection: -> { Order.statuses.keys }
   filter :created_at
@@ -15,6 +16,7 @@ ActiveAdmin.register Order do
     id_column
     column :name
     column :email
+    column :vk_link
     column :phone
     tag_column :status do |order|
       if order.recent?
