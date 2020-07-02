@@ -2,7 +2,7 @@ ActiveAdmin.register Order do
 
   menu label: 'Заявки'
 
-  actions :index, :show
+  actions :index, :show, :destroy
 
   filter :name
   filter :vk_link
