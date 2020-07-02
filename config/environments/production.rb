@@ -90,4 +90,17 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.active_storage.service = :amazon
 
+  config.action_mailer.default_url_options = { host: 'kurs-parikmaher.ru', port: 80 }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :address              => "smtp.yandex.ru",
+      :domain               => 'kurs-parikmaher.ru',
+      :port                 => 587,
+      :user_name            => 'info@kurs-parikmaher.ru',
+      :password             => 'Frosia411',
+      :authentication       => 'login',
+      :enable_starttls_auto => true
+  }
+
 end

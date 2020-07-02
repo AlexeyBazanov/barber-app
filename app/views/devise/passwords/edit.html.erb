@@ -1,25 +1,27 @@
-<h2>Change your password</h2>
+<%= render layout: 'devise/shared/wrapper', locals: { title: 'Изменить пароль', sub_title: 'от личного кабинета' } do %>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-  <%= f.hidden_field :reset_password_token %>
+  <%= bootstrap_form_for resource, as: resource_name, url: password_path(resource_name),
+                         html: { method: :put, class: 'm-t-10 p-30'}, data: { aos: 'fade-left', 'aos-duration': '1200' } do |f| %>
 
-  <div class="field">
-    <%= f.label :password, "New password" %><br />
-    <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em><br />
-    <% end %>
-    <%= f.password_field :password, autofocus: true, autocomplete: "new-password" %>
-  </div>
+    <%= f.hidden_field :reset_password_token %>
 
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirm new password" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <%= f.password_field :password, autofocus: true, hide_label: true, placeholder: 'Новый пароль', autocomplete: "new-password" %>
+      </div>
 
-  <div class="actions">
-    <%= f.submit "Change my password" %>
-  </div>
+      <div class="col-lg-12">
+        <%= f.password_field :password_confirmation, hide_label: true, placeholder: 'Новый пароль еще раз', autocomplete: "new-password" %>
+      </div>
+
+      <div class="actions col-lg-12 d-flex m-t-20">
+        <button type="submit" class="btn btn-md btn-block btn-danger-gradiant btn-arrow" data-disable-with="Отправка...">
+          <span> Изменить пароль <i class="ti-arrow-right"></i></span>
+        </button>
+      </div>
+    </div>
+
+  <% end %>
+
 <% end %>
 
-<%= render "devise/shared/links" %>
