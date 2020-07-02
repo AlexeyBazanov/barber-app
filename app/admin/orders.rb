@@ -5,7 +5,6 @@ ActiveAdmin.register Order do
   actions :index, :show
 
   filter :name
-  filter :email
   filter :vk_link
   filter :phone
   filter :status, as: :select, collection: -> { Order.statuses.keys }
@@ -15,7 +14,6 @@ ActiveAdmin.register Order do
   index do
     id_column
     column :name
-    column :email
     column :vk_link
     column :phone
     tag_column :status do |order|
