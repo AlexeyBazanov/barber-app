@@ -50,7 +50,7 @@ ActiveAdmin.register Course do
       f.input :description, as: :quill_editor
       f.input :image, as: :file
 
-      f.has_many :lessons do |lesson_f|
+      f.has_many :lessons, allow_destroy: true do |lesson_f|
         lesson_f.input :video_id, as: :select, collection: Video.pluck(:name, :id)
         lesson_f.input :name
         lesson_f.input :start_at
