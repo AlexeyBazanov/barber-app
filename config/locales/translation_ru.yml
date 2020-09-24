@@ -60,6 +60,7 @@ ru:
         phone: Телефон  #g
         status: Статус  #g
         vk_link: Ссылка на ВК  #g
+        contacts: Контакты  #g
         created_at: Дата создания
         updated_at: Дата изменения
 

@@ -103,7 +103,7 @@ ActiveRecord::Schema.define(version: 2020_09_24_124550) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "vk_link"
-    t.string "contact", null: false
+    t.string "contacts", default: "", null: false
   end
 
   create_table "users", force: :cascade do |t|

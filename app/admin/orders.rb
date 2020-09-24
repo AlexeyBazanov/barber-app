@@ -13,8 +13,6 @@ ActiveAdmin.register Order do
   index do
     id_column
     column :name
-    column :vk_link
-    column :phone
     column :contacts
     tag_column :status do |order|
       if order.recent?
