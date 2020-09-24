@@ -5,10 +5,10 @@
       $(document).ready(function () {
           Swal.fire({
               position: 'top-end',
-              icon: '<%= key == 'notice' ? 'success' : 'error' %>',
+              icon: '<%= key == 'notice' ? 'success' : 'warning' %>',
               title: '<%= message %>',
               showConfirmButton: false,
-              timer: 2500
+              timer: 5500
           })
       });
 

@@ -4,6 +4,6 @@ class Order < ApplicationRecord
       recent: 'recent', processed: 'processed'
   }
 
-  validates :name, :vk_link, :phone, presence: true
+  validates :name, :contacts, presence: true
 
 end
