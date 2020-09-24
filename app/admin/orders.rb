@@ -5,8 +5,7 @@ ActiveAdmin.register Order do
   actions :index, :show, :destroy
 
   filter :name
-  filter :vk_link
-  filter :phone
+  filter :contacts
   filter :status, as: :select, collection: -> { Order.statuses.keys }
   filter :created_at
   filter :updated_at
@@ -16,6 +15,7 @@ ActiveAdmin.register Order do
     column :name
     column :vk_link
     column :phone
+    column :contacts
     tag_column :status do |order|
       if order.recent?
         'Новый'
