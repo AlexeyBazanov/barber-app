@@ -48,6 +48,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'i18n_generators'
 end
 
 group :test do
@@ -70,3 +71,4 @@ gem 'active_storage_validations'
 gem 'image_processing', '~> 1.2'
 gem 'aws-sdk-s3', require: false
 gem 'bootstrap_form', '~> 4.0'
+gem 'russian', '~> 0.6.0'

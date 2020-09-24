@@ -5,6 +5,10 @@ ru:
       admin_user: Администратор  #g
       order: Заявка  #g
       user: Пользователь  #g
+      access_key: Ключ доступа  #g
+      course: Курс  #g
+      lesson: Урок  #g
+      video: Видео  #g
 
     attributes:
       active_admin/comment:
@@ -22,3 +26,65 @@ ru:
         reset_password_sent_at: Сброс пароля отправлен на  #g
         reset_password_token: Сброс пароля токена  #g
 
+      access_key:
+        activate: Активирован  #g
+        body: Значение  #g
+        course: :activerecord.models.course  #g
+        expiration_date: Дата окончания доступа  #g
+        user: :activerecord.models.user  #g
+        created_at: Дата создания
+        updated_at: Дата изменения
+
+      course:
+        description: Описание  #g
+        finish_at: Дата завершения  #g
+        image_attachment: :activerecord.models.image_attachment  #g
+        image_blob: :activerecord.models.image_blob  #g
+        lessons: Уроки  #g
+        name: Название  #g
+        start_at: Дата старта  #g
+        created_at: Дата создания
+        updated_at: Дата изменения
+
+      lesson:
+        course: :activerecord.models.course  #g
+        home_work: Домашняя работа  #g
+        name: Название  #g
+        start_at: Дата старта  #g
+        video: :activerecord.models.video  #g
+        created_at: Дата создания
+        updated_at: Дата изменения
+
+      order:
+        name: Имя  #g
+        phone: Телефон  #g
+        status: Статус  #g
+        vk_link: Ссылка на ВК  #g
+        created_at: Дата создания
+        updated_at: Дата изменения
+
+      user:
+        access_keys: Ключи доступа  #g
+        current_sign_in_at: Текущая дата входа  #g
+        current_sign_in_ip: IP адрес при текущем входе  #g
+        email: Email  #g
+        encrypted_password: Пароль  #g
+        fname: Имя  #g
+        last_sign_in_at: Последняя дата входа  #g
+        last_sign_in_ip: IP адрес при последнем входе  #g
+        lname: Фамилия  #g
+        remember_created_at: remember_created_at  #g
+        reset_password_sent_at: reset_password_sent_at  #g
+        reset_password_token: reset_password_token  #g
+        created_at: Дата создания
+        updated_at: Дата изменения
+
+      video:
+        description: Описание  #g
+        image_attachment: :activerecord.models.image_attachment  #g
+        image_blob: :activerecord.models.image_blob  #g
+        lessons: Уроки  #g
+        link: Ссылка  #g
+        name: Название  #g
+        created_at: Дата создания
+        updated_at: Дата изменения

@@ -11,30 +11,6 @@
   </component>
   <component name="ModuleRunConfigurationManager">
     <shared>
-      <configuration default="false" name="Production: barber_app" type="RailsRunConfigurationType" factoryName="Rails">
-        <module name="barber_app" />
-        <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-        <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-        <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-        <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-          <COVERAGE_PATTERN ENABLED="true">
-            <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-          </COVERAGE_PATTERN>
-        </EXTENSION>
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
-        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-        <method v="2" />
-      </configuration>
       <configuration default="false" name="Development: barber_app" type="RailsRunConfigurationType" factoryName="Rails">
         <module name="barber_app" />
         <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -59,6 +35,53 @@
         <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
         <method v="2" />
       </configuration>
+      <configuration default="false" name="Production: barber_app" type="RailsRunConfigurationType" factoryName="Rails">
+        <module name="barber_app" />
+        <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+        <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+        <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+        <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+          <COVERAGE_PATTERN ENABLED="true">
+            <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+          </COVERAGE_PATTERN>
+        </EXTENSION>
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
+        <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+        <method v="2" />
+      </configuration>
+      <configuration default="false" name="spec: barber_app" type="RakeRunConfigurationType" factoryName="Rake">
+        <module name="barber_app" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+        <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+        <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+        <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+          <COVERAGE_PATTERN ENABLED="true">
+            <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+          </COVERAGE_PATTERN>
+        </EXTENSION>
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+        <method v="2" />
+      </configuration>
       <configuration default="false" name="test: barber_app" type="RakeRunConfigurationType" factoryName="Rake">
         <module name="barber_app" />
         <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -79,29 +102,6 @@
         <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
         <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
         <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
-        <method v="2" />
-      </configuration>
-      <configuration default="false" name="spec: barber_app" type="RakeRunConfigurationType" factoryName="Rake">
-        <module name="barber_app" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-        <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-        <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-        <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-          <COVERAGE_PATTERN ENABLED="true">
-            <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-          </COVERAGE_PATTERN>
-        </EXTENSION>
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-        <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
         <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
         <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
         <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
@@ -171,6 +171,7 @@
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="has_scope (v0.7.2, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.2, RVM: ruby-2.6.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n_generators (v2.2.2, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="image_processing (v1.10.3, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="inherited_resources (v1.11.0, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-like (v0.3.1, RVM: ruby-2.6.3) [gem]" level="application" />
@@ -215,6 +216,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ruby-vips (v2.0.17, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby_dep (v1.5.0, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.0, RVM: ruby-2.6.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="russian (v0.6.0, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.4, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.1.0, RVM: ruby-2.6.3) [gem]" level="application" />
