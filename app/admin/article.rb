@@ -3,6 +3,11 @@ ActiveAdmin.register Article do
   menu label: 'Статьи'
 
   permit_params :title, :content, :visible, :image
+  
+  filter :title
+  filter :visible
+  filter :created_at
+  filter :updated_at
 
   index do
     id_column
