@@ -9,6 +9,7 @@ ru:
       course: Курс  #g
       lesson: Урок  #g
       video: Видео  #g
+      article: Статья
 
     attributes:
       active_admin/comment:
@@ -87,5 +88,13 @@ ru:
         lessons: Уроки  #g
         link: Ссылка  #g
         name: Название  #g
+        created_at: Дата создания
+        updated_at: Дата изменения
+
+      article:
+        title: Заголовок
+        content: Содержимое
+        image: Картинка
+        visible: Видимость
         created_at: Дата создания
         updated_at: Дата изменения
