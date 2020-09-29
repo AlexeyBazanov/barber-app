@@ -71,6 +71,7 @@ gem 'activeadmin'
 gem 'active_skin'
 gem 'activeadmin_addons'
 gem 'activeadmin_quill_editor'
+gem 'activeadmin_quill_editor'
 gem 'active_storage_validations'
 gem 'image_processing', '~> 1.2'
 gem 'aws-sdk-s3', require: false

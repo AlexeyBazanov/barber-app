@@ -18,6 +18,8 @@ $panelHeaderBck: #442240;
 $skinLogo: url("logo_2.png") no-repeat 0 0;
 @import "active_skin";
 @import 'activeadmin/quill_editor_input';
+@import 'activeadmin/quill_editor/quill.snow';
+@import 'activeadmin/quill_editor_input';
 
 .panel {
   h3 {
