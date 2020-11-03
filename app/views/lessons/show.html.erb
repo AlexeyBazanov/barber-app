@@ -13,28 +13,30 @@
     <div class="row">
       <div class="col-lg-8 col-sm-12">
         <h2 class="font-medium"><%= @lesson.name %></h2>
-
-        <video
-          id="my-player"
-          class="video-js vjs-theme-city"
-          controls
-          preload="auto"
-          poster="<%=  url_for(@lesson.video.image) %>"
-          data-setup='{}'>
-            <source src="<%= @lesson.video.link %>" type="video/mp4"></source>
-            <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank">
-                supports HTML5 video
-              </a>
-            </p>
-        </video>
+        <div class='embed-responsive'>  
+          <video
+            id="my-player"
+            class="video-js vjs-theme-city"
+            controls
+            fluid="true"
+            preload="auto"
+            poster="<%=  url_for(@lesson.video.image) %>"
+            data-setup='{}'>
+              <source src="<%= @lesson.video.link %>" type="video/mp4"></source>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                  supports HTML5 video
+                </a>
+              </p>
+          </video>
+        </div>
 
         <script>
-            document.addEventListener("contextmenu", function(e){
+             document.addEventListener("contextmenu", function(e){
                 e.preventDefault();
-            }, false);
+             }, false);
         </script>
 
         <% if @lesson.home_work.present? %>
