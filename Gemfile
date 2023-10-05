@@ -77,3 +77,4 @@ gem 'image_processing', '~> 1.2'
 gem 'aws-sdk-s3', require: false
 gem 'bootstrap_form', '~> 4.0'
 gem 'russian', '~> 0.6.0'
+gem 'mimemagic', '~> 0.3.10'

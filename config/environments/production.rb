@@ -88,7 +88,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.active_storage.service = :amazon
+  config.active_storage.service = :local
 
   config.action_mailer.default_url_options = { host: 'www.kurs-parikmaher.ru', port: 80 }
 
@@ -96,11 +96,10 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
       :address              => "smtp.yandex.ru",
       :domain               => 'kurs-parikmaher.ru',
-      :port                 => 587,
+      :port                 =>  587,
       :user_name            => 'info@kurs-parikmaher.ru',
       :password             => 'Frosia411',
       :authentication       => 'login',
       :enable_starttls_auto => true
   }
-
 end
