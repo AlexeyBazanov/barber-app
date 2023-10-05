@@ -4,6 +4,7 @@ lock "~> 3.14.1"
 set :application, "barber-app"
 set :repo_url, "git@github.com:AlexeyBazanov/barber-app.git"
 set :deploy_to, "/home/deploy/barber_app"
+set :ssh_options, paranoid: false
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 set :keep_releases, 5
 
