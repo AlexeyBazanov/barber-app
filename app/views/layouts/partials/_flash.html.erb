@@ -3,13 +3,12 @@
     <% flash.each do |key, message| %>
 
       $(document).ready(function () {
-          Swal.fire({
-              position: 'top-end',
-              icon: '<%= key == 'notice' ? 'success' : 'warning' %>',
-              title: '<%= message %>',
-              showConfirmButton: false,
-              timer: 5500
-          })
+          console.log('<%= message %>');
+          window.notie.alert({
+            type: '<%= key == 'notice' ? 'success' : 'warning' %>',
+            text: '<%= message %>',
+            position: 'bottom'
+          });
       });
 
     <% end %>
