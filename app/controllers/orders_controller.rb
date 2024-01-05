@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
+    @order.name = "Клиент #{Order.count + 1}"
 
     respond_to do |format|
       if verify_recaptcha(model: @order) && @order.save
