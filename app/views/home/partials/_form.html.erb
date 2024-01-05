@@ -16,9 +16,17 @@
     </div>
 
     <div class="col-lg-12 d-flex m-t-20">
-      <button type="submit" class="btn btn-md btn-block btn-danger-gradiant btn-arrow" data-disable-with="Отправка...">
-        <span> Записаться на курс <i class="ti-arrow-right"></i></span>
-      </button>
+      <div class='recaptcha'>
+        <%= recaptcha_tags %>
+      </div>
+    </div>
+
+    <div class="col-lg-12 d-flex m-t-20">
+      <div>
+        <button type="submit" class="btn btn-md btn-block btn-danger-gradiant btn-arrow" data-disable-with="Отправка...">
+          <span> Записаться на курс <i class="ti-arrow-right"></i></span>
+        </button>
+      </div>
     </div>
 
   </div>

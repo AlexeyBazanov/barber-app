@@ -1,10 +1,9 @@
 class OrdersController < ApplicationController
-
   def create
     @order = Order.new(order_params)
 
     respond_to do |format|
-      if @order.save
+      if verify_recaptcha(model: @order) && @order.save
         @order = Order.new
         format.js { render 'success' }
       else
